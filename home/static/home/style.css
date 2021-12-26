@@ -1,0 +1,470 @@
+@import "font.css";
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+* body {
+  direction: rtl;
+  font-family:  "IRANSans-web", "Tanha_FD", "sans-serif";
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a:focus {
+  color: #5D5D5D;
+}
+
+@media (min-width: 1080px) {
+  .pushbar.opened {
+    display: block;
+  }
+
+  html.pushbar_locked {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+  }
+
+  .pushbar_locked .pushbar_main_content.pushbar_blur {
+    filter: blur(151px);
+  }
+
+  .pushbar {
+    z-index: 1000;
+    position: fixed;
+    will-change: transform;
+    overflow-y: auto;
+    transition: transform 0.7s ease;
+    will-change: transform;
+    background: #fff;
+  }
+
+  .pushbar_overlay {
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    will-change: opacity;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    will-change: opacity;
+    background: #6868688c;
+  }
+
+  html.pushbar_locked .pushbar_overlay {
+    opacity: 0.8;
+    z-index: 999;
+    transition: opacity 0.5s ease;
+  }
+
+  .pushbar.from_right {
+    top: 0;
+    right: 0;
+    width: 300px;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    transform: translateZ(0) translateX(100%);
+  }
+
+  .pushbar.opened {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+@media (min-width: 1080px) and (min-width: 1300px) {
+  .container {
+    width: 1250px;
+  }
+}
+@media (min-width: 1080px) {
+  .menu {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px #ececec;
+    width: 100%;
+    display: block;
+    z-index: 999;
+  }
+}
+@media (min-width: 1080px) {
+  .main-menu {
+    display: flex;
+  }
+}
+@media (min-width: 1080px) {
+  .img-logo {
+    width: 20%;
+  }
+  .img-logo img {
+    width: 6em;
+  }
+}
+@media (min-width: 1080px) {
+  nav {
+    width: 50%;
+  }
+  nav ul {
+    display: flex;
+    align-items: baseline;
+  }
+  nav li {
+    margin-left: 30px;
+    font-family: "Tanha-FD";
+    font-size: 15px;
+  }
+}
+@media (min-width: 1080px) {
+  a {
+    color: #a1a1a1;
+  }
+}
+@media (min-width: 1080px) {
+  .dropdown {
+    position: relative;
+    width: auto;
+    display: inline-block;
+  }
+}
+@media (min-width: 1080px) {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 6px 27px 2px rgba(189, 189, 189, 0.2);
+    z-index: 1;
+  }
+}
+@media (min-width: 1080px) {
+  .dropdown-content li {
+    color: black;
+    padding: 12px 12px 12px 12px;
+    display: block;
+  }
+}
+@media (min-width: 1080px) {
+  .arrow-d {
+    width: 20px;
+    margin: 0px 0px -7px 0px;
+  }
+}
+@media (min-width: 1080px) {
+  .dropdown-content a:hover {
+    color: #25257E;
+  }
+}
+@media (min-width: 1080px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transform: translateY(0) translateX(30%);
+  }
+}
+@media (min-width: 1080px) {
+  .sign {
+    width: 20%;
+    text-align: left;
+    font-family: "Tanha-FD";
+    margin: 1em;
+  }
+  .sign a {
+    margin-right: 20px;
+    color: #25257E;
+  }
+}
+@media (min-width: 1080px) {
+  .s {
+    height: 40em;
+  }
+}
+@media (min-width: 1080px) {
+  .main-img {
+    width: 40%;
+    float: right;
+    padding-top: 6em;
+  }
+  .main-img .img-back {
+    width: 34em;
+    position: relative;
+    transform: translateY(0) translateX(100px);
+  }
+}
+@media (min-width: 1080px) {
+  .main-main {
+    color: #505050;
+    padding-top: 10em;
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  .main-main h4 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #3B3B3B;
+  }
+}
+@media (min-width: 1080px) {
+  .main-text {
+    margin-top: 8em;
+  }
+  .main-text .text-main-t {
+    font-size: 13px;
+    margin-right: 40px;
+    padding: 12px;
+    border-radius: 3px;
+    color: #0D13D7;
+    border: 1.3px solid #0D13D7;
+  }
+  .main-text .text-main {
+    color: #3B3B3B;
+    font-size: 13px;
+  }
+}
+@media (min-width: 1080px) {
+  .text-main-t:hover {
+    background-color: #25257E;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+}
+@media (min-width: 1080px) {
+  .card-main {
+    display: block;
+  }
+}
+@media (min-width: 1080px) {
+  h3 {
+    text-align: center;
+    width: 11%;
+    margin: auto;
+    font-weight: 200;
+    color: #3B3B3B;
+    border-bottom: solid #4e4e96;
+  }
+}
+@media (min-width: 1080px) {
+  .p-card {
+    text-align: center;
+    margin-top: 4em;
+  }
+  .p-card a {
+    color: #0D13D7;
+  }
+}
+@media (min-width: 1080px) {
+  .card-m {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1080px) {
+  .cd {
+    background-color: #fff;
+    box-shadow: 0px 14px 63px -14px #eaeaea;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1080px) {
+  .card-a {
+    display: block;
+    margin: auto;
+    width: 15%;
+  }
+  .card-a img {
+    width: 100%;
+    text-align: center;
+  }
+  .card-a h4 {
+    text-align: center;
+    margin-top: -10px;
+  }
+  .card-a p {
+    font-family: "tanha";
+    text-align: center;
+  }
+}
+@media (min-width: 1080px) {
+  .main-T {
+    margin-top: 8em;
+  }
+  .main-T h5 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 0em;
+    color: #5D5D5D;
+  }
+}
+@media (min-width: 1080px) {
+  .div-main {
+    height: 33em;
+    position: relative;
+    width: 100%;
+    margin-top: 5em;
+  }
+}
+@media (min-width: 1080px) {
+  .img-T {
+    float: right;
+    width: auto;
+    margin: 0;
+  }
+  .img-T img {
+    width: 34em;
+  }
+}
+@media (min-width: 1080px) {
+  .T-main {
+    float: left;
+    margin-top: 5em;
+    margin-left: 5em;
+    width: 45%;
+  }
+}
+@media (min-width: 1080px) {
+  .f-t {
+    float: right;
+    width: 45%;
+    margin-right: 5em;
+  }
+}
+@media (min-width: 1080px) {
+  .f-i {
+    float: left;
+    transform: translateY(0) translateX(80px);
+  }
+}
+@media (min-width: 1080px) {
+  .div-T {
+    align-items: center;
+    text-align: center;
+    height: 12em;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 14px 63px -14px #eaeaea;
+    border-radius: 10px;
+  }
+  .div-T h4 {
+    font-weight: 200;
+    color: #5D5D5D;
+  }
+  .div-T a {
+    position: relative;
+    font-size: 13px;
+    width: auto;
+    padding: 10px;
+    margin-right: 2em;
+    text-align: right;
+    float: right;
+    border: 1.4px solid #0D13D7;
+    color: #0D13D7;
+    border-radius: 40px;
+  }
+  .div-T p {
+    display: none;
+  }
+  .div-T a:hover {
+    transition: all 0.5s ease;
+    background-color: #0D13D7;
+    color: #fff;
+  }
+}
+@media (min-width: 1080px) {
+  .uni-main {
+    margin-top: 7em;
+    height: 20em;
+  }
+}
+@media (min-width: 1080px) {
+  .uni-T {
+    float: right;
+    width: 35%;
+    border-right: 4px solid #e02121;
+    margin-right: 11em;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1080px) {
+  .uni-i {
+    width: 30%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 1080px) {
+  .uni-g {
+    margin-right: 30px;
+  }
+  .uni-g img {
+    width: 70px;
+  }
+}
+@media (min-width: 1080px) {
+  .sup {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    background-color: #3B3B3B;
+    background: linear-gradient(to right, #53a0ec, #185a9d);
+  }
+  .sup h4 {
+    color: #fff;
+    margin-bottom: 2em;
+  }
+  .sup a {
+    color: #3B3B3B;
+    background-color: #fff;
+    padding: 14px;
+    font-size: 12px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    box-shadow: 0px 8px 9px -6px #0000008a;
+  }
+}
+@media (min-width: 1080px) {
+  .footer {
+    display: block;
+    margin-top: 1cm;
+  }
+}
+@media (min-width: 1080px) {
+  .footer-main {
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media (min-width: 1080px) {
+  .footer-m {
+    font-size: 15px;
+    width: 50%;
+    float: right;
+  }
+}
+@media (min-width: 1080px) {
+  .footer-d {
+    font-size: 15px;
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 1080px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

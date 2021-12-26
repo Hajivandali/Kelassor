@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134" height="75" viewBox="0 0 134 75">
+  <g id="Group_4391" data-name="Group 4391" transform="translate(1)">
+    <text id="کلاسور" transform="translate(10 50)" fill="#25257e" font-size="50" font-family="AGhasem, A Ghasem"><tspan x="0" y="0">کلاسور</tspan></text>
+    <g id="turned_in_not" transform="translate(70.367 44.349)">
+      <path id="Icon" d="M0,22.054v0L.011,2.45A2.224,2.224,0,0,1,1.887,0h9.429A2.227,2.227,0,0,1,13.2,2.45v19.6L6.6,18.378,0,22.054ZM1.887,2.45V18.378L6.6,15.708h0l4.714,2.671V2.45Z" transform="translate(0 0)" fill="#ff001a"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M0,0H10.924V18.06L5.6,16.147,0,18.06Z" transform="translate(71.59 45.702)" fill="#ff001a"/>
+  </g>
+</svg>
